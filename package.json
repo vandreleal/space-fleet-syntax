@@ -1,7 +1,7 @@
 {
   "name": "space-fleet-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "The Space Fleet is a dark syntax Atom theme",
   "keywords": [
     "syntax",
@@ -12,9 +12,8 @@
     "space fleet",
     "dark syntax"
   ],
-  "author": "Vandré Leal Cândido",
-  "repository": "https://github.com/vandreleal/space-fleet-syntax",
   "author": "Vandre Leal (https://vandreleal.github.io)",
+  "repository": "https://github.com/vandreleal/space-fleet-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
