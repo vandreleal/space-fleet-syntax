@@ -1,0 +1,78 @@
+.syntax--js {
+  &.syntax--constant {
+    color: @very-light-gray;
+  }
+
+  &.syntax--support {
+    &.syntax--variable {
+      &.syntax--property {
+        color: @very-light-gray;
+      }
+
+      &.syntax--property.syntax--dom {
+        color: @blue;
+      }
+    }
+  }
+
+  &.syntax--entity {
+    &.syntax--name {
+      &.syntax--type {
+        color: @orange;
+      }
+    }
+  }
+
+  &.syntax--variable {
+    &.syntax--property {
+      color: @blue;
+    }
+
+    &.syntax--other.syntax--object {
+      color: @very-light-gray;
+    }
+
+    &.syntax--other.syntax--object.syntax--property {
+      color: @blue;
+    }
+  }
+
+  &.syntax--string.syntax--quoted.syntax--template {
+    .syntax--other.syntax--object.syntax--property {
+      color: @green;
+    }
+  }
+
+  &.syntax--constant {
+    &.syntax--numeric {
+      color: @orange;
+    }
+
+    &.syntax--boolean {
+      color: @red;
+    }
+  }
+
+  &.syntax--brace.syntax--curly,
+  &.syntax--delimiter.syntax--object.syntax--comma,
+  &.syntax--keyword.syntax--operator,
+  &.syntax--punctuation.syntax--begin,
+  &.syntax--punctuation.syntax--end {
+    color: @cyan;
+
+    .syntax--comment & {
+      color: @very-light-gray;
+    }
+  }
+
+  &.syntax--delete,
+  &.syntax--export .syntax--variable.syntax--default,
+  &.syntax--in,
+  &.syntax--instanceof,
+  &.syntax--new,
+  &.syntax--of,
+  &.syntax--typeof,
+  &.syntax--void {
+    color: @purple;
+  }
+}
